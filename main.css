@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
 * {
   padding: 0;
   margin: 0;
@@ -26,12 +25,10 @@ html {
   font-family: "Heebo", sans-serif;
   color: #3A3A3A;
 }
-
 #main-section .title {
   font-size: 4rem;
   font-weight: 900;
 }
-
 #main-section .discription {
   font-weight: normal;
   font-size: 1.2rem;
@@ -44,13 +41,11 @@ html {
   #main-section {
     margin-top: 70px;
   }
-
   #main-section .title {
     font-size: 2em;
     padding: 40px;
   }
 }
-
 #our-power-container {
   position: relative;
   background-color: #fff;
@@ -59,7 +54,6 @@ html {
   justify-content: space-around;
   box-shadow: 5px 0px 8px rgba(0, 0, 0, 0.2901960784);
 }
-
 #our-power-container img {
   height: 5vh;
 }
@@ -70,7 +64,6 @@ html {
   text-align: center;
   margin: 0 auto;
 }
-
 #about .about-content {
   text-align: center;
   font-family: " Heebo", sans-serif;
@@ -81,13 +74,11 @@ html {
   line-height: 1.5;
   margin: auto;
 }
-
 #about .title {
   font-size: 40px;
   font-weight: 600;
 }
-
-#about>img {
+#about > img {
   width: 80px;
   padding-top: 50px;
 }
@@ -99,21 +90,18 @@ html {
   font-family: "Heebo", sans-serif;
   color: #3A3A3A;
 }
-
 #works .title {
   padding-top: 100px;
   margin: 0 auto;
   font-size: 4rem;
   font-weight: 900;
 }
-
 #works .discription {
   width: 40%;
   margin: 0 auto;
   padding-top: 30px;
   font-size: 1.2rem;
 }
-
 #works .projects-container {
   width: 100%;
   display: grid;
@@ -121,21 +109,18 @@ html {
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
 }
-
 @media (max-width: 992px) and (min-width: 776px) {
   #works .projects-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
 }
-
 @media (max-width: 776px) and (min-width: 250px) {
   #works .projects-container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
   }
 }
-
 #works .projects-container .project {
   width: 70%;
   margin: 40px auto;
@@ -146,8 +131,7 @@ html {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6156862745);
   cursor: pointer;
 }
-
-#works .projects-container .project>img {
+#works .projects-container .project > img {
   width: 100%;
   border-radius: 10px 10px 0 0;
   border-bottom: 1px solid rgba(0, 61, 57, 0.2196078431);
@@ -200,8 +184,7 @@ textarea {
   height: 100%;
   text-align: center;
 }
-
-.image-box>img {
+.image-box > img {
   width: 100%;
 }
 
@@ -216,20 +199,16 @@ p {
     width: 100vw;
     margin: 0;
   }
-
   .form-box h2 {
     margin-bottom: 5px;
   }
-
   .form-box form {
     padding: 0;
   }
-
   .image-box {
     display: none;
   }
 }
-
 footer {
   background-color: #1AE0EC;
   width: 100%;
@@ -277,13 +256,9 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
 .buttons-box .button-a {
   margin: 20px;
 }
-
 .buttons-box .button-a span {
   font-size: 1rem;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
