@@ -1,0 +1,35 @@
+#main-section {
+    background-image: $gradient;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: $heebo;
+    color: $title-color;
+
+    .title {
+        font-size: $main-font-size;
+        font-weight: $bold;
+    }
+
+    .discription {
+        font-weight: normal;
+        font-size: $description-font-size;
+        display: block;
+        width: 70vw;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:776px) {
+    #main-section {
+        margin-top: 70px;
+    }
+
+    #main-section .title {
+        font-size: 2em;
+        padding: 40px;
+
+    }
+}

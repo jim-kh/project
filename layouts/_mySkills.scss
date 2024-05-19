@@ -1,0 +1,12 @@
+#our-power-container {
+    position: relative;
+    background-color: $white;
+    width: $vpWidth;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: $box-shadow;
+
+    & img {
+        height: 5vh;
+    }
+}

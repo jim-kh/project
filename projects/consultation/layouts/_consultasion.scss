@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Heebo", sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+}
+
+.img-box {
+    width: 40%;
+    height: 100%;
+
+    >.border-top {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 20px;
+        background-color: #fdbd03;
+    }
+
+
+
+    & img {
+        width: 100%;
+        height: 80%;
+        margin: 80px auto;
+        object-fit: contain;
+    }
+
+}
+
+.form-box {
+    position: relative;
+
+
+
+
+    width: 60%;
+    height: 100%;
+
+
+    .wApp {
+        img {
+            width: 40px;
+        }
+
+    }
+
+    h1 {
+
+        color: #FDBD03;
+        margin-top: 170px;
+
+
+        font-size: 4em;
+        font-weight: 900;
+
+
+    }
+
+    p {
+        max-width: 30%;
+        color: #020253;
+        font-size: 1.2em;
+        padding: 30px 0;
+
+    }
+}
+
+form {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    color: #2C2C2C;
+
+
+}
+
+label {
+    display: block;
+
+}
+
+.filed-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+
+
+    input,
+    #Textarea {
+        width: 90%;
+        height: 50px;
+        background-color: #E5EEFF;
+        border: none;
+        border-bottom: 5px solid #FDBD03;
+    }
+
+    #Textarea {
+        width: 190%;
+
+        height: auto;
+    }
+
+    button {
+        border: none;
+
+        width: 166px;
+        height: 50px;
+        background-color: #FDBD03;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+}
+
+.form-box {
+    & .wApp {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+
+
+    }
+
+}
+
+
+.icon,
+.wApp {
+    width: 70px;
+    height: 70px;
+    background-color: #FDBD03;
+
+
+}
+
+.social {
+    width: 100%;
+    height: 15px;
+    background-color: #FDBD03;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.icon {
+
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+    left: 50px;
+    bottom: 80px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background: #FDBD03 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+
+
+    & img {
+        width: 40%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+
+    }
+}
+
+@media (max-width:778px) {
+    .container {
+        display: block;
+    }
+
+    .img-box {
+        width: 100vw;
+        height: 20vh;
+
+        img {
+            height: 70%;
+            margin: 20px auto;
+        }
+
+        .border-top {
+            width: 90vw;
+        }
+    }
+
+    .form-box {
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 100px;
+
+
+        h1 {
+            font: normal normal 900 40px/59px Heebo;
+
+        }
+
+        p {
+            max-width: 80%;
+            font: normal normal normal 15px/22px Heebo;
+        }
+
+        form {
+
+            width: 90%;
+            height: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            flex-direction: column;
+
+
+            .filed-box {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            input,
+            #Textarea {
+                width: 100%;
+            }
+
+            #Textarea {
+                height: 30%;
+
+            }
+
+            button {
+                width: 100%;
+
+            }
+        }
+
+
+
+        .social {
+            width: 100vw;
+            bottom: 0;
+            left: 0;
+
+
+            .icon {
+                top: -50px;
+            }
+        }
+
+        .wApp {
+            display: none;
+        }
+    }
+}

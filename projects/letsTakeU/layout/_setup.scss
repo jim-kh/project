@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Assistant", sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+$mobile: 776px;
+$mainColor: #D3E10E;
+$labColor: #011560;
+$generalColor: #F9F9F9;
+$inputBGC: #F6F6F6;
+$inputMobileBGC: #E5EEFF;

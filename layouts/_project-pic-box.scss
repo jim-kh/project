@@ -1,0 +1,17 @@
+.project-pic-box {
+    width: 100vw;
+
+    .inner-box {
+        width: 80%;
+        margin: 100px auto;
+        box-shadow: $box-shadow;
+
+
+        img {
+            width: 100%;
+        }
+
+
+
+    }
+}

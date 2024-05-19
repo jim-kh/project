@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Heebo", sans-serif;
+}
+
+
+.container {
+    width: 100vw;
+    display: flex;
+}
+
+%flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+$mobile: 776px;
+$formColor: #020253;
+$formbgc: #E5EEFF;
+$white: #fff;
+$titleFZ: 2.5rem;
+$generalFont: 1.25rem;

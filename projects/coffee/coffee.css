@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+}
+
+.inner-box, .form-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-box {
+  width: 40%;
+}
+
+.inner-box {
+  width: 80%;
+  height: 506px;
+  padding: 20px;
+  text-align: right;
+  flex-direction: column;
+}
+
+form {
+  color: #020253;
+}
+form h1 {
+  font-size: 2.5rem;
+}
+form p {
+  font-size: 1.25rem;
+  padding: 20px 0;
+}
+form .filed-box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+form .filed-box label {
+  font-size: 0.9375rem;
+  font-weight: bold;
+}
+form .filed-box input {
+  border: none;
+  border-bottom: 2px solid #020253;
+  width: 100%;
+  height: 50px;
+  background-color: #E5EEFF;
+}
+form .filed-box button {
+  width: 166px;
+  height: 50px;
+  background-color: #020253;
+  margin-top: 10px;
+}
+form .filed-box button span {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.backg-box {
+  width: 60%;
+  height: 100vh;
+  background-image: url("./img/thCoffee.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 776px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .backg-box {
+    width: 100vw;
+    height: 40vh;
+  }
+  .form-box {
+    width: 100vw;
+  }
+  .form-box form button {
+    width: 100%;
+  }
+  .inner-box {
+    width: 100vw;
+    height: 60vh;
+    border: 1px solid #000;
+  }
+}/*# sourceMappingURL=coffee.css.map */

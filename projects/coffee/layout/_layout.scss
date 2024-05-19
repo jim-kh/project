@@ -1,0 +1,97 @@
+.form-box {
+    width: 40%;
+    @extend %flex;
+}
+
+.inner-box {
+    width: 80%;
+    height: 506px;
+    @extend %flex;
+    padding: 20px;
+    text-align: right;
+    flex-direction: column;
+}
+
+form {
+    color: $formColor;
+
+    h1 {
+        font-size: $titleFZ;
+    }
+
+    p {
+        font-size: $generalFont;
+        padding: 20px 0;
+
+    }
+
+    .filed-box {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 80%;
+        margin: 0 auto;
+
+        label {
+            font-size: $generalFont*0.75;
+            font-weight: bold;
+        }
+
+        input {
+            border: none;
+            border-bottom: 2px solid $formColor;
+            width: 100%;
+            height: 50px;
+            background-color: $formbgc;
+        }
+
+        button {
+            width: 166px;
+            height: 50px;
+            background-color: $formColor;
+            margin-top: 10px;
+
+            span {
+                color: $white;
+                font-size: $generalFont;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.backg-box {
+    width: 60%;
+    height: 100vh;
+    background-image: url("./img/thCoffee.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width:$mobile) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .backg-box {
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .form-box {
+        width: 100vw;
+
+        form button {
+            width: 100%;
+        }
+    }
+
+    .inner-box {
+        width: 100vw;
+        height: 60vh;
+        border: 1px solid #000;
+    }
+
+
+}
