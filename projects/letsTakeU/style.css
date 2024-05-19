@@ -53,11 +53,11 @@
 form {
   width: 70%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 auto;
 }
 form .filed-box {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   color: #011560;
@@ -72,10 +72,12 @@ form input {
   border-bottom: 2px solid #D3E10E;
 }
 form button {
-  width: 166px;
+  width: 20%;
   height: 50px;
   background-color: #D3E10E;
-  margin-top: 20px;
+  margin-top: 25px;
+  font-weight: bold;
+  border: none;
 }
 
 @media (max-width: 776px) {
@@ -90,18 +92,20 @@ form button {
     height: 60vh;
   }
   form {
-    width: 100%;
+    width: 80%;
     flex-direction: column;
   }
   form .filed-box {
-    width: 70%;
+    width: 100%;
     margin: 20px auto;
   }
   form input {
+    width: 100%;
     background-color: #E5EEFF;
   }
   form button {
-    width: 90%;
+    width: 100%;
+    margin: auto;
     font-size: 1.5rem;
     font-weight: bold;
   }
