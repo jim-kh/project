@@ -16,6 +16,7 @@ html {
 }
 
 #main-section {
+  width: 100%;
   background-image: linear-gradient(to right top, #527185, #587c97, #5f86a9, #6891bb, #739bce, #5f9dd2, #43a0d5, #00a2d6, #009bb7, #009088, #00814e, #1b6f04);
   height: 50vh;
   text-align: center;
@@ -47,6 +48,7 @@ html {
   }
 }
 #our-power-container {
+  width: 100%;
   position: relative;
   background-color: #fff;
   width: 100vw;
@@ -55,7 +57,7 @@ html {
   box-shadow: 5px 0px 8px rgba(0, 0, 0, 0.2901960784);
 }
 #our-power-container img {
-  height: 5vh;
+  height: 8vh;
 }
 
 #about {
@@ -155,6 +157,8 @@ html {
 }
 
 form {
+  width: 25rem;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,6 +198,10 @@ p {
   margin-bottom: 30px;
 }
 
+#contact-button {
+  width: 100%;
+}
+
 @media (max-width: 776px) {
   .form-box {
     width: 100vw;
@@ -204,6 +212,9 @@ p {
   }
   .form-box form {
     padding: 0;
+  }
+  .form-box form #contact-button {
+    width: 90%;
   }
   .image-box {
     display: none;

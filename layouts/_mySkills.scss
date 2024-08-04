@@ -1,4 +1,5 @@
 #our-power-container {
+    width: 100%;
     position: relative;
     background-color: $white;
     width: $vpWidth;
@@ -7,6 +8,6 @@
     box-shadow: $box-shadow;
 
     & img {
-        height: 5vh;
+        height: 8vh;
     }
 }

@@ -5,6 +5,7 @@
 }
 
 #main-section {
+  width: 100%;
   background-image: linear-gradient(to right top, #527185, #587c97, #5f86a9, #6891bb, #739bce, #5f9dd2, #43a0d5, #00a2d6, #009bb7, #009088, #00814e, #1b6f04);
   height: 50vh;
   text-align: center;
@@ -36,6 +37,7 @@
   }
 }
 #our-power-container {
+  width: 100%;
   position: relative;
   background-color: #fff;
   width: 100vw;
@@ -44,7 +46,7 @@
   box-shadow: 5px 0px 8px rgba(0, 0, 0, 0.2901960784);
 }
 #our-power-container img {
-  height: 5vh;
+  height: 8vh;
 }
 
 .project-pic-box {
