@@ -1,5 +1,5 @@
 #main-section {
-    width: 100%;
+    width: 100% !important;
     background-image: $gradient;
     height: 50vh;
     text-align: center;
@@ -18,7 +18,7 @@
         font-weight: normal;
         font-size: $description-font-size;
         display: block;
-        width: 70vw;
+        width: 70%;
         margin: 0 auto;
     }
 }

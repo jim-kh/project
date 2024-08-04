@@ -1,8 +1,7 @@
 #our-power-container {
-    width: 100%;
+    width: 100% !important;
     position: relative;
     background-color: $white;
-    width: $vpWidth;
     display: flex;
     justify-content: space-around;
     box-shadow: $box-shadow;

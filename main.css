@@ -9,14 +9,8 @@ html {
   scroll-behavior: smooth;
 }
 
-.container {
-  width: 100vw;
-  display: grid;
-  grid-template-rows: repeat(4);
-}
-
 #main-section {
-  width: 100%;
+  width: 100% !important;
   background-image: linear-gradient(to right top, #527185, #587c97, #5f86a9, #6891bb, #739bce, #5f9dd2, #43a0d5, #00a2d6, #009bb7, #009088, #00814e, #1b6f04);
   height: 50vh;
   text-align: center;
@@ -34,7 +28,7 @@ html {
   font-weight: normal;
   font-size: 1.2rem;
   display: block;
-  width: 70vw;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -48,10 +42,9 @@ html {
   }
 }
 #our-power-container {
-  width: 100%;
+  width: 100% !important;
   position: relative;
   background-color: #fff;
-  width: 100vw;
   display: flex;
   justify-content: space-around;
   box-shadow: 5px 0px 8px rgba(0, 0, 0, 0.2901960784);
@@ -86,7 +79,7 @@ html {
 }
 
 #works {
-  width: 100vw;
+  width: 100%;
   text-align: center;
   background-color: #F6F6F6;
   font-family: "Heebo", sans-serif;
