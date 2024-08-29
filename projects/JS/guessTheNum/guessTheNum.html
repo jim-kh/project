@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container" style="min-height: 100vh;">
+    <div class="row text-center">
+      <div class="col-sm-5">
+        <h3 class="display-3 text-danger my-5">Guess <i class="fa-regular fa-lightbulb text-warning"></i> Number </h1>
+          <p>You have 5 attempts to guess number (1-10)</p>
+          <label for="guess">Your guess:</label>
+          <input class="form-control my-3" type="number" id="guess" />
+          <button class="btn btn-outline-success my-5 px-5" onclick="check()" id="checkBtn">Check</button>
+      </div>
+      <div class="col-sm-7" id="results"></div>
+    </div>
+
+  </div>
+  <script>
+    let num, attempts;
+
+    function startGame() {
+      num = Math.ceil(Math.random() * 10)
+      attempts = 5
+      console.log(num);
+      document.getElementById("results").innerHTML = ""
+      document.getElementById("guess").value = ""
+      document.getElementById("checkBtn").disabled = false
+      document.getElementById("guess").readOnly = false
+
+    }
+
+    startGame()
+
+    function check() {
+      let guess = +document.getElementById("guess").value
+      // בדיקת תקינות הקלט
+      if (guess < 1 || guess > 10) {
+        document.getElementById("results").innerHTML += `<p class="my-3">Please enter number between 1 and 10 </p>`
+      }
+      else {
+        attempts--;
+        if (guess < num) {
+          document.getElementById("results").innerHTML += `<p class="my-3">${guess} is too small </p>`
+        }
+        else if (guess > num) {
+          document.getElementById("results").innerHTML += `<p class="my-3">${guess} is too big </p>`
+        }
+        else {
+          document.getElementById("results").innerHTML += `<p class="text-success">You won the game! The number was ${num}. </p> <button class="btn btn-primary" onclick="startGame()">Start again</button>`
+          document.getElementById("checkBtn").disabled = true
+          document.getElementById("guess").readOnly = true
+
+        }
+      }
+
+
+    }
+
+  </script>
+</body>
+
+</html>

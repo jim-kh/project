@@ -118,7 +118,7 @@ html {
 }
 #works .projects-container .project {
   width: 70%;
-  margin: 40px auto;
+  margin: 30px auto;
   justify-content: center;
   border-radius: 10px;
   background-color: #040;
@@ -143,14 +143,14 @@ html {
 .form-box {
   width: 50%;
   text-align: center;
-  margin-top: 30px;
+  margin: 30px auto 0 auto;
   position: relative;
   padding-top: 7vh;
   font-family: "Heebo", sans-serif;
 }
 
 form {
-  width: 25rem;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -197,7 +197,7 @@ p {
 
 @media (max-width: 776px) {
   .form-box {
-    width: 100vw;
+    width: 80%;
     margin: 0;
   }
   .form-box h2 {

@@ -1,14 +1,22 @@
 .project-pic-box {
     width: 100%;
-
+    
+    
+    
     .inner-box {
-        width: 80%;
+        width: 50%;
         margin: 100px auto;
         box-shadow: $box-shadow;
-
-
+        border-radius: 20px;
+        overflow: hidden;
+        
+        
+        
         img {
             width: 100%;
+            filter: drop-shadow(20px 20px 10px rgb(32 32 / 20%));
+          
+
         }
 
 
