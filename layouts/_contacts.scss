@@ -11,7 +11,7 @@
     width: 50%;
     text-align: center;
     margin: 30px auto 0 auto;
-    
+
     position: relative;
     padding-top: 7vh;
 
@@ -79,7 +79,7 @@ p {
 
 @media (max-width:776px) {
     .form-box {
-        width: 80%;
+        width: 100%;
         margin: 0;
 
         & h2 {
@@ -93,6 +93,12 @@ p {
 
             & #contact-button {
                 width: 90%;
+            }
+
+            & input,
+            textarea {
+                width: 100%;
+
             }
 
 
