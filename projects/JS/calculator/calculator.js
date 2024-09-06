@@ -17,7 +17,7 @@ function calc() {
 
     }
 }
-function sino() {
+function sin() {
     let expression = display.value;
     let angleInDegrees = expression;
     if (!isNaN(angleInDegrees)) {
@@ -27,7 +27,7 @@ function sino() {
         display.value = 'Invalid Input';
     }
 }
-function coso() {
+function cos() {
     let expression = display.value;
     let angleInDegrees = expression;
     if (!isNaN(angleInDegrees)) {

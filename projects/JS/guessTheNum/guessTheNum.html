@@ -28,45 +28,54 @@
   <script>
     let num, attempts;
 
+    // Function to start the game
     function startGame() {
-      num = Math.ceil(Math.random() * 10)
-      attempts = 5
-      console.log(num);
-      document.getElementById("results").innerHTML = ""
-      document.getElementById("guess").value = ""
-      document.getElementById("checkBtn").disabled = false
-      document.getElementById("guess").readOnly = false
-
+      // Generate a random number between 1 and 10
+      num = Math.ceil(Math.random() * 10);
+      // Set the number of attempts
+      attempts = 5;
+      console.log(num); // Log the number for debugging
+      // Clear previous results
+      document.getElementById("results").innerHTML = "";
+      // Clear the input field
+      document.getElementById("guess").value = "";
+      // Enable the check button
+      document.getElementById("checkBtn").disabled = false;
+      // Make the input field editable
+      document.getElementById("guess").readOnly = false;
     }
 
-    startGame()
+    // Initialize the game when the script loads
+    startGame();
 
+    // Function to check the user's guess
     function check() {
-      let guess = +document.getElementById("guess").value
-      // בדיקת תקינות הקלט
+      let guess = +document.getElementById("guess").value;
+      // Input validation
       if (guess < 1 || guess > 10) {
-        document.getElementById("results").innerHTML += `<p class="my-3">Please enter number between 1 and 10 </p>`
-      }
-      else {
+        document.getElementById("results").innerHTML += `<p class="my-3">Please enter a number between 1 and 10</p>`;
+      } else {
         attempts--;
+        // Check if the guess is too low
         if (guess < num) {
-          document.getElementById("results").innerHTML += `<p class="my-3">${guess} is too small </p>`
+          document.getElementById("results").innerHTML += `<p class="my-3">${guess} is too small</p>`;
         }
+        // Check if the guess is too high
         else if (guess > num) {
-          document.getElementById("results").innerHTML += `<p class="my-3">${guess} is too big </p>`
+          document.getElementById("results").innerHTML += `<p class="my-3">${guess} is too big</p>`;
         }
+        // Check if the guess is correct
         else {
-          document.getElementById("results").innerHTML += `<p class="text-success">You won the game! The number was ${num}. </p> <button class="btn btn-primary" onclick="startGame()">Start again</button>`
-          document.getElementById("checkBtn").disabled = true
-          document.getElementById("guess").readOnly = true
-
+          document.getElementById("results").innerHTML += `<p class="text-success">You won the game! The number was ${num}.</p> <button class="btn btn-primary" onclick="startGame()">Start again</button>`;
+          // Disable the check button
+          document.getElementById("checkBtn").disabled = true;
+          // Make the input field read-only
+          document.getElementById("guess").readOnly = true;
         }
       }
-
-
     }
-
   </script>
+
 </body>
 
 </html>
