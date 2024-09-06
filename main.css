@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+header {
+  direction: ltr;
+  height: 100px;
+}
+header nav {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.561);
+}
+header .nav-link {
+  color: #fff;
+  font-size: 1.5rem;
+}
+header .pic {
+  width: 60px;
+}
+
 * {
   padding: 0;
   margin: 0;

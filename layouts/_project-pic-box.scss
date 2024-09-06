@@ -1,18 +1,17 @@
 .project-pic-box {
-    width: 100%;
+    width: 30%;
+    margin: 100px auto;
 
+    img {
+        width: 100%;
+        margin: 0 auto;
+        filter: drop-shadow(10px 15px 10px rgba(109, 110, 109, 0.323));
+    }
+}
 
-
-    .inner-box {
-        width: 50%;
-        margin: 100px auto;
-        box-shadow: $box-shadow;
-        border-radius: 20px;
-        overflow: hidden;
-
-        img {
-            width: 100%;
-            filter: drop-shadow(20px 20px 10px rgb(32 32 / 20%));
-        }
+@media(max-width:576px) {
+    .project-pic-box {
+        width: 70%;
+        margin: 200px auto;
     }
 }
